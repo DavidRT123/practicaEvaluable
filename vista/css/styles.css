@@ -1,0 +1,110 @@
+#pie{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #d4d4d4;
+}
+
+.navbar{
+	background-color: #d4d4d4;
+}
+
+/*Media Queries*/
+
+/*XS*/
+@media screen and (min-width: 1px) and (max-width: 575px) { 
+	.title{
+		font-size: 25px;
+	}
+
+	.title>p.valor{
+		font-size: 15px;
+	}
+
+	.previous:disabled, .next:disabled, .previous:disabled:hover, .next:disabled:hover{
+		background: gray;
+		color: lightgray;
+		box-shadow: 0 8px darkgray;
+	}
+
+	.previous{
+		position: absolute;
+    	top: 45%;
+    	left: -5%;
+    	font-size: 45px;
+	}
+
+	.next{
+		position: absolute;
+    	top: 45%;
+    	right: -5%;
+    	font-size: 45px;
+	}
+
+	.btn-2d:hover, .btn-2d:active {
+		position: absolute;
+    	top: 45%;
+		box-shadow: 0 8px #ab3c3c;
+	}
+}
+
+/*SM*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.title{
+		font-size: 30px;
+	}
+
+	.title>p.valor{
+		font-size: 20px;
+	}
+
+	.previous:disabled, .next:disabled, .previous:disabled:hover, .next:disabled:hover{
+		background: gray;
+		color: lightgray;
+		box-shadow: 0 8px darkgray;
+	}
+
+	.previous{
+		position: absolute;
+    	top: 45%;
+    	left: -2%;
+    	font-size: 45px;
+	}
+
+	.next{
+		position: absolute;
+    	top: 45%;
+    	right: -2%;
+    	font-size: 45px;
+	}
+
+	.btn-2d:hover, .btn-2d:active{
+		position: absolute;
+    	top: 45%;
+		box-shadow: 0 8px #ab3c3c;
+	}
+}
+
+/*MD*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.title{
+		font-size: 30px;
+	}
+
+	.title>p.valor{
+		font-size: 20px;
+	}
+}
+
+/*LG*/
+/*@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.title{
+		font-size: 30px;
+	}
+
+	.title>p.valor{
+		font-size: 20px;
+	}
+}*/
