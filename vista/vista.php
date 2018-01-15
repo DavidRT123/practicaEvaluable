@@ -66,7 +66,7 @@
 	//Esta función rellena el contenido
 	function contenido($contenido){
 		echo "<section>";
-		echo $contenido;
+		formulario();
 		echo "</section>";	
 	}	
 	
@@ -77,5 +77,25 @@
 		echo "</footer>";
 		echo "</body>";
 		echo "</html>";	
+	}
+
+	function formulario($object = null){
+		echo "<form>";
+		echo " <div class='container'";
+		echo "  <div class='form-group'>";
+		echo "    <label for='dni'>DNI</label>";
+		echo "    <input type='text' class='form-control' id='dni' aria-describedby='emailHelp' placeholder='DNI' value='".$object->dni."'>";
+		echo "    <label for='nombre'>Nombre</label>";
+		echo "    <input type='text' class='form-control' id='nombre' aria-describedby='emailHelp' placeholder='Nombre' value='".$object->nombre."'>";
+		echo "    <label for='direccion'>Dirección</label>";
+		echo "    <input type='text' class='form-control' id='direccion' aria-describedby='emailHelp' placeholder='Dirección' value='".$object->direccion."'>";
+		echo "    <label for='direccion'>Email</label>";
+		echo "    <input type='text' class='form-control' id='direccion' aria-describedby='emailHelp' placeholder='Email' value='".$object->email."'>";
+		echo "    <label for='pass'>Contraseña</label>";
+		echo "    <input type='password' class='form-control' id='pass' aria-describedby='emailHelp' placeholder='Contraseña' value='".$object->pass."'>";
+		echo "  <button type='submit' class='btn btn-primary'>Botón</button>";
+		echo "  </div>";
+		echo "</div>";
+		echo "</form>";
 	}	
 ?>
