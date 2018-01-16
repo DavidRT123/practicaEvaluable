@@ -11,6 +11,11 @@
 	background-color: #d4d4d4;
 }
 
+.navbar>.active>a{
+	font-weight: bold;
+	color: red;
+}
+
 /*Media Queries*/
 
 /*XS*/

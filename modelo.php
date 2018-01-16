@@ -10,6 +10,20 @@
 				$this->conect = new mysqli($host, $user, $pass, $db);
 			}
 		}
+
+		public function __get($propiedad){
+			if(property_exists(__CLASS__, $propiedad)){
+				return $this->$propiedad;
+			}
+			return NULL;
+		}
+
+		public function __set($propiedad, $valor){
+			if(property_exists(__CLASS__, $propiedad)){
+				$this->$propiedad = $valor;
+			}
+			return NULL;
+		}
 	}
 
 	Class Cliente{

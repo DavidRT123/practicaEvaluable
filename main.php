@@ -1,8 +1,9 @@
 <?php
 	require("vista/vista.php");
-	$titulo = "Home";
-	$seccion = "Home";
-	cabecera($titulo, $seccion);
-	contenido("Estas en la sección de ".$seccion);
-	footer($seccion);
+	require("modelo.php");
+	$titulo = "Listado";
+	$conexion = new Conexion("localhost", "root", "root", "virtualmarket");
+	cabecera($titulo, $titulo);
+	listado($conexion);
+	footer($titulo);
 ?>
